@@ -52,7 +52,7 @@ target_link_libraries(QtPropertyBrowser PUBLIC
 set_target_properties(QtPropertyBrowser PROPERTIES AUTOMOC TRUE)
 
 if(BUILD_EXAMPLES)
-    add_subdirectory("examples/demo")
+    add_subdirectory(examples/demo)
 endif()
 
 include(GenerateExportHeader)
@@ -67,3 +67,9 @@ install(TARGETS QtPropertyBrowser
 )
 install(FILES ${HEADER_FILES} DESTINATION ${CMAKE_INSTALL_PREFIX}/include/QtPropertyBrowser)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/qtpropertybrowser_export.h DESTINATION ${CMAKE_INSTALL_PREFIX}/include/QtPropertyBrowser)
+
+
+option(BUILD_DOCUMENTATION "Use Doxygen to create the HTML based API documentation" OFF)
+if(BUILD_DOCUMENTATION)
+    include(doxygen/doxygen.cmake)
+endif()
