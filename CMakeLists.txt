@@ -32,6 +32,7 @@ source_group("Source Files" FILES ${SOURCE_FILES})
 set(CMAKE_AUTORCC ON)
 
 option(BUILD_SHARED_LIBS "Build shared library." ON)
+option(BUILD_EXAMPLES "Build examples." OFF)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 add_library(QtPropertyBrowser ${HEADER_FILES} ${SOURCE_FILES} ${QRC_FILES})
@@ -50,6 +51,9 @@ target_link_libraries(QtPropertyBrowser PUBLIC
 
 set_target_properties(QtPropertyBrowser PROPERTIES AUTOMOC TRUE)
 
+if(BUILD_EXAMPLES)
+    add_subdirectory("examples/demo")
+endif()
 
 include(GenerateExportHeader)
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
