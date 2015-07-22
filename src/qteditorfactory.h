@@ -35,12 +35,13 @@
 #define QTEDITORFACTORY_H
 
 #include "qtpropertymanager.h"
+#include "qtpropertybrowser_export.h"
 
 QT_BEGIN_NAMESPACE
 
 class QtSpinBoxFactoryPrivate;
 
-class QtSpinBoxFactory : public QtAbstractEditorFactory<QtIntPropertyManager>
+class QTPROPERTYBROWSER_EXPORT QtSpinBoxFactory : public QtAbstractEditorFactory<QtIntPropertyManager>
 {
     Q_OBJECT
 public:
@@ -64,7 +65,7 @@ private:
 
 class QtSliderFactoryPrivate;
 
-class QtSliderFactory : public QtAbstractEditorFactory<QtIntPropertyManager>
+class QTPROPERTYBROWSER_EXPORT QtSliderFactory : public QtAbstractEditorFactory<QtIntPropertyManager>
 {
     Q_OBJECT
 public:
@@ -88,7 +89,7 @@ private:
 
 class QtScrollBarFactoryPrivate;
 
-class QtScrollBarFactory : public QtAbstractEditorFactory<QtIntPropertyManager>
+class QTPROPERTYBROWSER_EXPORT QtScrollBarFactory : public QtAbstractEditorFactory<QtIntPropertyManager>
 {
     Q_OBJECT
 public:
@@ -112,7 +113,7 @@ private:
 
 class QtCheckBoxFactoryPrivate;
 
-class QtCheckBoxFactory : public QtAbstractEditorFactory<QtBoolPropertyManager>
+class QTPROPERTYBROWSER_EXPORT QtCheckBoxFactory : public QtAbstractEditorFactory<QtBoolPropertyManager>
 {
     Q_OBJECT
 public:
@@ -134,7 +135,7 @@ private:
 
 class QtDoubleSpinBoxFactoryPrivate;
 
-class QtDoubleSpinBoxFactory : public QtAbstractEditorFactory<QtDoublePropertyManager>
+class QTPROPERTYBROWSER_EXPORT QtDoubleSpinBoxFactory : public QtAbstractEditorFactory<QtDoublePropertyManager>
 {
     Q_OBJECT
 public:
@@ -159,7 +160,7 @@ private:
 
 class QtLineEditFactoryPrivate;
 
-class QtLineEditFactory : public QtAbstractEditorFactory<QtStringPropertyManager>
+class QTPROPERTYBROWSER_EXPORT QtLineEditFactory : public QtAbstractEditorFactory<QtStringPropertyManager>
 {
     Q_OBJECT
 public:
@@ -182,7 +183,7 @@ private:
 
 class QtDateEditFactoryPrivate;
 
-class QtDateEditFactory : public QtAbstractEditorFactory<QtDatePropertyManager>
+class QTPROPERTYBROWSER_EXPORT QtDateEditFactory : public QtAbstractEditorFactory<QtDatePropertyManager>
 {
     Q_OBJECT
 public:
@@ -206,7 +207,7 @@ private:
 
 class QtTimeEditFactoryPrivate;
 
-class QtTimeEditFactory : public QtAbstractEditorFactory<QtTimePropertyManager>
+class QTPROPERTYBROWSER_EXPORT QtTimeEditFactory : public QtAbstractEditorFactory<QtTimePropertyManager>
 {
     Q_OBJECT
 public:
@@ -228,7 +229,7 @@ private:
 
 class QtDateTimeEditFactoryPrivate;
 
-class QtDateTimeEditFactory : public QtAbstractEditorFactory<QtDateTimePropertyManager>
+class QTPROPERTYBROWSER_EXPORT QtDateTimeEditFactory : public QtAbstractEditorFactory<QtDateTimePropertyManager>
 {
     Q_OBJECT
 public:
@@ -250,7 +251,7 @@ private:
 
 class QtKeySequenceEditorFactoryPrivate;
 
-class QtKeySequenceEditorFactory : public QtAbstractEditorFactory<QtKeySequencePropertyManager>
+class QTPROPERTYBROWSER_EXPORT QtKeySequenceEditorFactory : public QtAbstractEditorFactory<QtKeySequencePropertyManager>
 {
     Q_OBJECT
 public:
@@ -272,7 +273,7 @@ private:
 
 class QtCharEditorFactoryPrivate;
 
-class QtCharEditorFactory : public QtAbstractEditorFactory<QtCharPropertyManager>
+class QTPROPERTYBROWSER_EXPORT QtCharEditorFactory : public QtAbstractEditorFactory<QtCharPropertyManager>
 {
     Q_OBJECT
 public:
@@ -294,7 +295,7 @@ private:
 
 class QtEnumEditorFactoryPrivate;
 
-class QtEnumEditorFactory : public QtAbstractEditorFactory<QtEnumPropertyManager>
+class QTPROPERTYBROWSER_EXPORT QtEnumEditorFactory : public QtAbstractEditorFactory<QtEnumPropertyManager>
 {
     Q_OBJECT
 public:
@@ -320,7 +321,7 @@ private:
 
 class QtCursorEditorFactoryPrivate;
 
-class QtCursorEditorFactory : public QtAbstractEditorFactory<QtCursorPropertyManager>
+class QTPROPERTYBROWSER_EXPORT QtCursorEditorFactory : public QtAbstractEditorFactory<QtCursorPropertyManager>
 {
     Q_OBJECT
 public:
@@ -342,7 +343,7 @@ private:
 
 class QtColorEditorFactoryPrivate;
 
-class QtColorEditorFactory : public QtAbstractEditorFactory<QtColorPropertyManager>
+class QTPROPERTYBROWSER_EXPORT QtColorEditorFactory : public QtAbstractEditorFactory<QtColorPropertyManager>
 {
     Q_OBJECT
 public:
@@ -364,7 +365,7 @@ private:
 
 class QtFontEditorFactoryPrivate;
 
-class QtFontEditorFactory : public QtAbstractEditorFactory<QtFontPropertyManager>
+class QTPROPERTYBROWSER_EXPORT QtFontEditorFactory : public QtAbstractEditorFactory<QtFontPropertyManager>
 {
     Q_OBJECT
 public:

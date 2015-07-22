@@ -35,12 +35,13 @@
 #define QTBUTTONPROPERTYBROWSER_H
 
 #include "qtpropertybrowser.h"
+#include "qtpropertybrowser_export.h"
 
 QT_BEGIN_NAMESPACE
 
 class QtButtonPropertyBrowserPrivate;
 
-class QtButtonPropertyBrowser : public QtAbstractPropertyBrowser
+class QTPROPERTYBROWSER_EXPORT QtButtonPropertyBrowser : public QtAbstractPropertyBrowser
 {
     Q_OBJECT
 public:

@@ -45,6 +45,8 @@
 #ifndef QTPROPERTYBROWSERUTILS_H
 #define QTPROPERTYBROWSERUTILS_H
 
+#include "qtpropertybrowser_export.h"
+
 #include <QtCore/QMap>
 #include <QtGui/QIcon>
 #include <QtWidgets/QWidget>
@@ -56,7 +58,7 @@ class QMouseEvent;
 class QCheckBox;
 class QLineEdit;
 
-class QtCursorDatabase
+class QTPROPERTYBROWSER_EXPORT QtCursorDatabase
 {
 public:
     QtCursorDatabase();
@@ -78,7 +80,7 @@ private:
     QMap<Qt::CursorShape, int> m_cursorShapeToValue;
 };
 
-class QtPropertyBrowserUtils
+class QTPROPERTYBROWSER_EXPORT QtPropertyBrowserUtils
 {
 public:
     static QPixmap brushValuePixmap(const QBrush &b);
@@ -92,7 +94,7 @@ public:
     static QString dateTimeFormat();
 };
 
-class QtBoolEdit : public QWidget {
+class QTPROPERTYBROWSER_EXPORT QtBoolEdit : public QWidget {
     Q_OBJECT
 public:
     QtBoolEdit(QWidget *parent = 0);

@@ -24,13 +24,17 @@ set(HEADER_FILES
     ${CMAKE_CURRENT_SOURCE_DIR}/src/qtvariantproperty.h
 )
 
+set(QRC_FILES ${CMAKE_CURRENT_SOURCE_DIR}/qtpropertybrowser.qrc)
+
 source_group("Header Files" FILES ${HEADER_FILES})
 source_group("Source Files" FILES ${SOURCE_FILES})
+
+set(CMAKE_AUTORCC ON)
 
 option(BUILD_SHARED_LIBS "Build shared library." ON)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
-add_library(QtPropertyBrowser ${HEADER_FILES} ${SOURCE_FILES})
+add_library(QtPropertyBrowser ${HEADER_FILES} ${SOURCE_FILES} ${QRC_FILES})
 
 target_include_directories(QtPropertyBrowser PUBLIC
     ${Qt5Core_INCLUDE_DIRS}
@@ -58,4 +62,4 @@ install(TARGETS QtPropertyBrowser
     ARCHIVE DESTINATION ${CMAKE_INSTALL_PREFIX}/lib
 )
 install(FILES ${HEADER_FILES} DESTINATION ${CMAKE_INSTALL_PREFIX}/include/QtPropertyBrowser)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/qtpropertybrowser_export.h DESTINATION ${CMAKE_INSTALL_PREFIX}/include)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/qtpropertybrowser_export.h DESTINATION ${CMAKE_INSTALL_PREFIX}/include/QtPropertyBrowser)

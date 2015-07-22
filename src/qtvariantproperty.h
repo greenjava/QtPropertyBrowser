@@ -34,7 +34,9 @@
 #ifndef QTVARIANTPROPERTY_H
 #define QTVARIANTPROPERTY_H
 
+#include "qtpropertybrowser_export.h"
 #include "qtpropertybrowser.h"
+
 #include <QtCore/QVariant>
 #include <QtGui/QIcon>
 
@@ -44,7 +46,7 @@ typedef QMap<int, QIcon> QtIconMap;
 
 class QtVariantPropertyManager;
 
-class QtVariantProperty : public QtProperty
+class QTPROPERTYBROWSER_EXPORT QtVariantProperty : public QtProperty
 {
 public:
     ~QtVariantProperty();
@@ -62,7 +64,7 @@ private:
     QScopedPointer<class QtVariantPropertyPrivate> d_ptr;
 };
 
-class QtVariantPropertyManager : public QtAbstractPropertyManager
+class QTPROPERTYBROWSER_EXPORT QtVariantPropertyManager : public QtAbstractPropertyManager
 {
     Q_OBJECT
 public:
@@ -145,7 +147,7 @@ private:
     Q_DISABLE_COPY(QtVariantPropertyManager)
 };
 
-class QtVariantEditorFactory : public QtAbstractEditorFactory<QtVariantPropertyManager>
+class QTPROPERTYBROWSER_EXPORT QtVariantEditorFactory : public QtAbstractEditorFactory<QtVariantPropertyManager>
 {
     Q_OBJECT
 public:
