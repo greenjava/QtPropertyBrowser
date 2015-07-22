@@ -66,6 +66,7 @@ install(TARGETS QtPropertyBrowser
     ARCHIVE DESTINATION ${CMAKE_INSTALL_PREFIX}/lib
 )
 install(FILES ${HEADER_FILES} DESTINATION ${CMAKE_INSTALL_PREFIX}/include/QtPropertyBrowser)
+install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/cmake/FindQtPropertyBrowser.cmake DESTINATION ${CMAKE_INSTALL_PREFIX})
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/qtpropertybrowser_export.h DESTINATION ${CMAKE_INSTALL_PREFIX}/include/QtPropertyBrowser)
 
 
